@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: oklch(5% 0 0);
+}
+.section {
+  background-color: aqua;
+  padding: 1rem;
+  border: 1px solid;
+}
+.container {
+  max-width: 80rem;
+  padding: 1px;
+  margin-inline: auto;
+  background-color: oklch(20% 0 0);
+}
+.children {
+  border: 1px solid;
+  padding: 1rem;
+}
+.flex {
+  display: flex;
+}
