@@ -173,7 +173,7 @@ body {
 .footer {
   background-color: #000000;
   padding-block: 1.25rem;
-  padding-inline: 5rem;
+  padding-inline: 7rem;
   display: flex;
   justify-content: space-between;
 }
