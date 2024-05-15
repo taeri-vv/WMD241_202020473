@@ -44,10 +44,14 @@ body {
   padding-inline: 20rem;
 }
 .hero__container {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  justify-content: space-between;
-  display: flex;
+  display: grid;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  grid-template-columns: 12.5rem repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 80rem;
+  padding: 0.75rem;
+  margin-inline: auto;
 }
 
 .search {
@@ -65,13 +69,11 @@ body {
   padding-inline: 1rem;
 }
 
-.card-collection {
-  width: 90%;
+.card__container {
   row-gap: 1.5rem;
   display: grid;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  row-gap: 2rem;
+  grid-column: 2/-1;
+  grid-row: 1/-1;
   grid-template-columns: subgrid;
   grid-auto-rows: subgrid;
 }
