@@ -38,6 +38,15 @@ body {
   border-radius: 8px;
 }
 
+.navigation-child {
+  background-color: #381fd1;
+  padding-inline: 8px;
+  padding-block: 0px;
+  line-height: 36px;
+  border-radius: 8px;
+  color: #fff;
+}
+
 .hero {
   margin-inline: auto;
   padding-block: 5rem;
