@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: oklch(98% 0.01 60deg);
+  max-width: 25rem;
+  font-family: "wanted sans", sans-serif;
+  border-radius: 0.75rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+// 와... 와이라노... 크기가... whyrano... 웨지...웨지 감자...
+// img는 클래스가 아이고 태그인데 마침표를 왜!!!!!!!!!!다니 이눔아
+
+.card {
+  overflow-y: hidden;
+  // 카드 크기를 넘어선 요소의 일부를 숨겨버림
+  color: oklch(30% 0.01 60deg);
+
+  &__top {
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+  }
+
+  &__bottom {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.0094rem;
+  }
+
+  &__subtitle {
+    margin-top: 0.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.0156rem;
+  }
+
+  &__p {
+    margin-top: 2rem;
+    color: oklch(50% 0.01 60deg); //deg는 각도!
+  }
+}
+
+.card__bottom .card__title {
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.0313rem;
+}
+//card__bottom의 card__title에게 ~
+
+.card__bottom .card__subtitle {
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: oklch(50% 0.01 60deg);
+  letter-spacing: 0.0156rem;
+}

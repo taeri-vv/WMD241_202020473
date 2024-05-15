@@ -14,35 +14,35 @@ h2 {
 
 .container {
   max-width: 800px;
-  margin-inline: auto;
+  margin-inline: auto; /* 중앙 정렬 */
   background-color: oklch(90% 0 0);
   padding-inline: 2.5rem;
 }
 
-.container > div {
-  padding: 1rem;
-}
-
-.container > div:nth-child(1) {
+.container > div:nth-child(1) /* 첫 번째 요소 선택 */ {
   background-color: oklch(90% 0.05 0);
   border: 1px dotted oklch(40% 0.05 0);
   color: oklch(20% 0.05 0);
 }
+
 .container > div:nth-child(2) {
   background-color: oklch(90% 0.05 40);
   border: 1px dotted oklch(40% 0.05 40);
   color: oklch(20% 0.05 40);
 }
+
 .container > div:nth-child(3) {
   background-color: oklch(90% 0.05 80);
   border: 1px dotted oklch(40% 0.05 80);
   color: oklch(20% 0.05 80);
 }
+
 .container > div:nth-child(4) {
   background-color: oklch(90% 0.05 120);
   border: 1px dotted oklch(40% 0.05 120);
   color: oklch(20% 0.05 120);
 }
+
 .container > div:nth-child(5) {
   background-color: oklch(90% 0.05 160);
   border: 1px dotted oklch(40% 0.05 160);
@@ -53,9 +53,6 @@ h2 {
   display: flex;
 }
 
-/* .flex-container > * { */
-/* flex-grow: 1; */
-/* } */
 .flex-child-opt-1 {
   flex-grow: 1;
 }
@@ -66,25 +63,29 @@ h2 {
 }
 
 .flex-container-opt-1 {
-  row-gap: 1.5rem;
-  column-gap: 1rem;
+  /* gap: 1rem; */
+  column-gap: 1rem; /* 열과 열 사이의 간격 */
+  row-gap: 1.5rem; /* 행과 행 사이의 간격 */
 }
 
 .flex-container-opt-2 {
-  justify-content: right;
-  justify-content: center;
-  justify-content: space-around;
-  justify-content: space-between;
+  /* justify-content: left; */
+  /* justify-content: right; */
+  /* justify-content: center; 가운데로 정렬 */
+  /* justify-content: space-evenly; 사이와, 양 끝에 일정한 간격 생성 */
+  /* justify-content: space-between; between에 균일한 간격 생성 */
+  justify-content: space-around; /* around에 균일한 간격 생성 */
 }
 
 .flex-container-opt-3 {
-  align-items: center;
-  align-items: start;
-  align-items: end;
+  /* align-items: stretch; */
+  /* align-items: start; */
+  /* align-items: end; */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
 .flex-container-opt-4 {
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -94,11 +95,17 @@ h2 {
 }
 
 .flex-wrap {
+  /* flex-wrap: nowrap; */
   flex-wrap: wrap;
 }
 
 .flex-wrap-opt-1 {
+  column-gap: 0.75rem;
+  row-gap: 1.5rem;
+}
+
+.flex-wrap-opt-1 > * {
   flex-grow: 1;
   flex-basis: 0;
-  min-width: 10rem;
+  min-width: 12.5rem;
 }

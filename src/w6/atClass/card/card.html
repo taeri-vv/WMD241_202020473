@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a card design: the beginning of selector</title>
+    <link rel="stylesheet" href="./style/card.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__top">
+        <div class="card__title">6W card design atClass!</div>
+        <div class="card__subtitle">subtitle</div>
+      </div>
+      <img class="card__img" src="../../../assets/pasta-carbonara.jpg" />
+      <div class="card__bottom">
+        <div class="card_title">6W card design atClass!</div>
+        <div class="card__subtitle">subtitle</div>
+        <div class="card__p">
+          카드 실습 예제를 복습하는 중이다. card:first-child 선택자(Selector)를
+          통해 카드의 첫 번째 아이에게만 스타일을 적용할 수 있다. 선택자의
+          종류로는 전체 선택자 (*), 태그 선택자, 클래스 선택자, ID 선택자 (#),
+          복합 선택자 [하위 선택자(a b a 요소의 자손인 b 요소 선택)/자식
+          선택자(a>b a 요소의 자식인 b 요소를 선택)], 속성 선택자 ([attr]), 가상
+          클래스 선택자 [(::), (::before, ::after)] 등이 있다.
+          <!-- 마우스 오버 시 선택 a::hover -->
+        </div>
+      </div>
+    </div>
+    <div class="card card--color-blue">
+      <div class="card__top">
+        <div class="card__title">6W card design atClass!</div>
+        <div class="card__subtitle">subtitle</div>
+      </div>
+      <img class="card__img" src="../../../assets/pasta-carbonara.jpg" />
+      <div class="card__bottom">
+        <div class="card_title">6W card design atClass!</div>
+        <div class="card__subtitle">subtitle</div>
+        <div class="card__p">카드 실습 예제를 복습하는 중이다.</div>
+      </div>
+    </div>
+  </body>
+</html>
