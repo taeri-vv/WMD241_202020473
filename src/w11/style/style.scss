@@ -1,0 +1,84 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-family: "wanted sans", sans-serif;
+}
+
+.btn {
+  cursor: grab;
+  // cursor: 커서 올리면 그랩 //
+  transition-delay: 100ms;
+  // animation-timing-function
+  transition: all 300ms ease-out;
+  // animation-timing-function
+  // transition: all 1000ms ease-out; 부드럽게 오버 //
+  max-width: fit-content;
+  padding-inline: 0.8rem;
+  padding-block: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-top: 1.25rem; /*for dev*/
+  text-transform: uppercase;
+  border-radius: 0.45rem;
+  color: aliceblue;
+  &-type {
+    &-elevated {
+      border: 1px solid oklch(85% 0 0);
+      background-color: oklch(35% 0 0);
+      &:hover {
+        background-color: oklch(25% 0 0);
+        color: rgba(240, 248, 255, 0.703);
+      } // 마우스 오버 시 해당 효과 //
+    }
+    &-tonal {
+      border: 1px solid oklch(85% 0 0);
+      background-color: oklch(55% 0.1 0);
+      &:hover {
+        background-color: oklch(25% 0.1 0);
+        color: rgba(240, 248, 255, 0.703);
+      }
+    }
+    &-outline {
+      border: 1px solid oklch(85% 0 0);
+      background-color: unset;
+      color: rgb(54, 54, 54);
+      &:hover {
+        background-color: oklch(80% 0 0.05);
+        color: rgb(99, 99, 101);
+      }
+    }
+    &-text {
+      background-color: unset;
+      color: rgb(54, 54, 54);
+      &:hover {
+        color: rgb(147, 52, 104);
+        background-color: unset;
+        font-weight: 600;
+        animation-name: rainbow;
+        animation-duration: 5000ms;
+      }
+    }
+  }
+}
+
+// 키프레임 설정, 키프레임에게는 중복되지 않는 이름 필요 재밋다. //
+@keyframes rainbow {
+  0% {
+    background-color: oklch(0.5 0.2 0);
+  }
+  25% {
+    transform: translate(1rem, 0rem);
+  }
+  50% {
+    transform: translate(1rem, 1rem);
+  }
+  100% {
+    background-color: oklch(10 0.2 0);
+  }
+}
