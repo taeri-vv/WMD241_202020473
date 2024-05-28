@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple js</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 75rem;
+        margin-inline: auto;
+        padding: 48px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px 1fr));
+        grid-auto-rows: 1fr;
+        background-color: oklch(0.95 0 0);
+        gap: 1.5rem;
+      }
+
+      .card {
+        padding: 16px;
+        background-color: oklch(0.9 0.2 240);
+      }
+      .card:hover {
+        padding: 16px;
+        background-color: oklch(0.9 0.2 120);
+        transition: all 1000ms ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">Lorem.</div>
+      <div class="card">Possimus, nesciunt.</div>
+      <div class="card">Maiores, ut voluptate?</div>
+      <div class="card">Assumenda esse consectetur libero!</div>
+      <div class="card">Soluta illo doloribus necessitatibus iste!</div>
+      <div class="card">Consectetur adipisci animi tempora error! Culpa.</div>
+      <div class="card">Ducimus ea beatae aliquid quia, iure facilis!</div>
+      <div class="card">
+        Alias reiciendis neque ducimus fugit deleniti perferendis assumenda.
+      </div>
+      <div class="card">
+        Possimus excepturi in maiores adipisci itaque minus laudantium tempore.
+      </div>
+      <div class="card">
+        Animi excepturi labore consequuntur, sint nesciunt dignissimos ipsum
+        exercitationem doloremque?
+      </div>
+    </div>
+  </body>
+</html>
