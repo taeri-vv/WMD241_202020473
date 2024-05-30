@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1rem;
+  margin-block-end: 1rem;
+}
+
+.oontainer {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  background-color: rgba(230, 230, 230, 0.838);
+}
+
+.lottie {
+  aspect-ratio: 300/300;
+  margin-inline: auto;
+  display: block;
+  width: 100%;
+}
